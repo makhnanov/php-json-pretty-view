@@ -1,0 +1,31 @@
+{
+    "name": "makhnanov/php-json-pretty-view",
+    "description": "PHP Json Pretty View",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["debug", "json", "json_pretty"],
+    "homepage": "https://bakirov.expert/",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Roman Bakirov",
+            "email": "makhnanov@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^12.0"
+    },
+    "autoload": {
+        "files": [
+            "functions/pretty-json.php"
+        ],
+        "psr-4": {
+            "Makhnanov\\JsonPrettyView\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/test/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
