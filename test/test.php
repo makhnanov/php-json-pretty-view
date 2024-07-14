@@ -4,7 +4,7 @@ use Makhnanov\JsonPrettyView\PrettyJson;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-pretty_json(<<<JSON
+$asString = <<<JSON
 {
     "id": 1000,
     "true": true,
@@ -18,7 +18,13 @@ pretty_json(<<<JSON
     ],
     "last string": "finish"
 }
-JSON);
+JSON;
+
+pretty_json($asString);
+
+// OR
+
+json_pretty($asString);
 
 // OR
 
